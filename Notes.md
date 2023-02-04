@@ -1,4 +1,8 @@
+# **SQL Notes and Examples**
+
 ## **SQL `SELECT` Statement**
+
+<details><summary></summary>
 
 The `SELECT` statement is used to select data from a database.
 
@@ -28,8 +32,11 @@ Selects **all the columns** from the "Customers" table:
 ```sql
 SELECT * FROM Customers;
 ```
+</details>
 
 ## **SQL `SELECT` `DISTINCT` Statement**
+
+<details><summary></summary>
 
 The `SELECT DISTINCT` statement is used to return only distinct (different) values.
 
@@ -48,8 +55,11 @@ Selects only the DISTINCT values from the "Country" column in the "Customers" ta
 SELECT DISTINCT Country 
 FROM Customers;
 ```
+</details>
 
 ## **SQL `WHERE` Clause**
+
+<details><summary></summary>
 
 The `WHERE` clause is used to filter records.
 
@@ -86,7 +96,11 @@ WHERE Country='Mexico';
 | `LIKE` |	Search for a pattern |
 | `IN`	| To specify multiple possible values for a column|
 
+</details>
+
 ## **SQL `AND`, `OR` and `NOT` Operators**
+
+<details><summary></summary>
 
 The `WHERE` clause can be combined with `AND`, `OR`, and `NOT` operators.
 
@@ -157,7 +171,11 @@ SELECT * FROM Customers
 WHERE Country='Germany' AND (City='Berlin' OR City='München');
 ```
 
+</details>
+
 ## **SQL `ORDER BY` Keyword**
+
+<details><summary></summary>
 
 The `ORDER BY` keyword is used to sort the result-set in ascending or descending order.
 
@@ -191,8 +209,11 @@ Selects all customers from the "Customers" table, sorted ascending by the "Count
 SELECT * FROM Customers
 ORDER BY Country ASC, CustomerName DESC;
 ```
+</details>
 
 ## **SQL `INSERT INTO` Statement**
+
+<details><summary></summary>
 
 The `INSERT INTO` statement is used to insert new records in a table.
 
@@ -228,7 +249,11 @@ INSERT INTO Customers (CustomerName, City, Country)
 VALUES ('Cardinal', 'Stavanger', 'Norway');
 ```
 
+</details>
+
 ## **SQL `NULL` Values**
+
+<details><summary></summary>
 
 A field with a `NULL` value is a field with no value.
 
@@ -269,3 +294,50 @@ SELECT CustomerName, ContactName, Address
 FROM Customers
 WHERE Address IS NOT NULL;
 ```
+</details>
+
+## **SQL `UPDATE` Statement**
+
+<details><summary></summary>
+
+The `UPDATE` statement is used to modify the existing records in a table.
+
+### **`UPDATE` Syntax**
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+```
+
+### **`UPDATE` Example**
+
+Updates the first customer (CustomerID = 1) with a new contact person and a new city.
+
+```sql
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+```
+</details>
+
+## **SQL `DELETE` Statement**
+
+<details><summary></summary>
+
+The `DELETE` statement is used to delete existing records in a table.
+
+### **DELETE Syntax**
+
+```sql
+DELETE FROM table_name WHERE condition;
+```
+
+### **`DELETE` Example**
+
+Deletes the customer "Alfreds Futterkiste" from the "Customers" table:
+
+```sql
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+```
+</details>
