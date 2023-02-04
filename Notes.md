@@ -1,4 +1,4 @@
-<span style="background-color:green">
+<div style="background-color:rgba(0, 0, 0, 0.0470588); padding:40px 0;">
 
 ## **SQL SELECT Statement**
 
@@ -30,8 +30,7 @@ Selects **all the columns** from the "Customers" table:
 ```
 SELECT * FROM Customers;
 ```
-
-</span>
+</div>
 
 ## **SQL SELECT DISTINCT Statement**
 
