@@ -14,5 +14,7 @@
 
 ## **About**
 
-SQL Notes and Examples. Setup & Run SQL in SQLite using Google Colab: [LINK](https://github.com/Followb1ind1y/SQL_Notes/blob/main/Run_SQL_in_SQLite.ipynb) <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="colab"/></a>
+* SQL [Notes](https://github.com/Followb1ind1y/SQL_Notes/blob/main/Notes.md) and Examples. 
+
+* [Setup & Run SQL in SQLite using Google Colab](https://github.com/Followb1ind1y/SQL_Notes/blob/main/Run_SQL_in_SQLite.ipynb) <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="colab"/></a>
 
